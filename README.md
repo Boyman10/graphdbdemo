@@ -8,8 +8,6 @@ Featuring :
 - Neo4J
 - REST API
 
-
-
 # Queries to test
 
 [More details](https://spring.io/guides/gs/accessing-neo4j-data-rest/)
@@ -37,3 +35,14 @@ curl --location 'http://localhost:8080/persons/search/findPersonByName?name=Paul
 
 curl --location 'http://localhost:8080/persons/search/findByMoviesTitle?title=That%20Thing%20You%20Do'
 
+
+# Run the application
+
+- Using maven Spring stage 
+
+  mvn spring-boot:run
+
+- Using a jar
+
+  mvn clean install
+  java -jar target/graphdb-demo-0.0.1-SNAPSHOT.jar
